@@ -2,25 +2,22 @@ package ARRAY;
 
 import java.util.Scanner;
 
-public class bubble_sort {
-    static void bubble(int x[]) {
+public class insertion_sort {
+    static void insertion(int x[]) {
         System.out.print("Array Before sorting : ");
         for (int i = 0; i < x.length; i++) {
             System.out.print(x[i] + " ");
         }
-        for (int i = 0; i < x.length - 1; i++) {
-            int f=0;
-            for (int j = 0; j < x.length - i - 1; j++) {
-                if (x[j] > x[j + 1]) {
+        for (int i = 0; i < x.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (x[j] < x[j - 1]) {
                     int t = x[j];
-                    x[j] = x[j + 1];
-                    x[j + 1] = t;
-                    f=1;
+                    x[j] = x[j - 1];
+                    x[j - 1] = t;
                 }
-            }
-            if(f==0)
-            {
-                break;
+                else{
+                    break;
+                }
             }
         }
         System.out.print("\nArray after sorting : ");
@@ -38,7 +35,7 @@ public class bubble_sort {
         for (int i = 0; i < x.length; i++) {
             x[i] = sc.nextInt();
         }
-        bubble(x);
+        insertion(x);
         sc.close();
     }
 }
