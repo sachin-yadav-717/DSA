@@ -8,14 +8,12 @@ public class union {
         ArrayList<Integer> list = new ArrayList<>();
         while (i < x.length && j < y.length) {
             if (x[i] < y[j]) {
-                k=x[i];
-                i++;
+                k=x[i++];
             } else if (y[j] < x[i]) {
                 k=y[j];
                 j++;
             } else {
-                k=x[i];
-                i++;
+                k=x[i++];
                 j++;
             }
             if(list.isEmpty()||list.get(list.size()-1)!=k)
