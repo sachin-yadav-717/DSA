@@ -10,8 +10,7 @@ public class union {
             if (x[i] < y[j]) {
                 k=x[i++];
             } else if (y[j] < x[i]) {
-                k=y[j];
-                j++;
+                k=y[j++];
             } else {
                 k=x[i++];
                 j++;
