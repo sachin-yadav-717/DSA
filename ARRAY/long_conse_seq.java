@@ -17,7 +17,7 @@ public class long_conse_seq {
                 while(set.contains(x+1))
                 {
                     c++;
-                    x=x+1;
+                    x++;;
                 }
             }
             l=Math.max(l, c);
