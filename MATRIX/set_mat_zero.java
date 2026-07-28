@@ -2,7 +2,7 @@ package MATRIX;
 import java.util.*;
 
 public class set_mat_zero {
-    static int[][] setz(int x[][])
+    static void setz(int x[][])
     {
         boolean r=false,c=false;
         for(int i=0;i<x[0].length;i++)
@@ -59,7 +59,6 @@ public class set_mat_zero {
                 x[i][0]=0;
             }
         }
-        return x;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
