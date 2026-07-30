@@ -9,22 +9,19 @@ public class print_spiral_order {
         {
             for(int i=l;i<=r;i++)
             {
-                x[t][i]=k;
-                k++;
+                x[t][i]=k++;
             }
             t++;
             for(int i=t;i<=b;i++)
             {
-                x[i][r]=k;
-                k++;
+                x[i][r]=k++;
             }
             r--;
             if(t<=b)
             {
                 for(int i=r;i>=l;i--)
                 {
-                    x[b][i]=k;
-                    k++;
+                    x[b][i]=k++;
                 }
                 b--;
             }
@@ -32,8 +29,7 @@ public class print_spiral_order {
             {
                 for(int i=b;i>=t;i--)
                 {
-                    x[i][l]=k;
-                    k++;
+                    x[i][l]=k++;
                 }
                 l++;
             }
