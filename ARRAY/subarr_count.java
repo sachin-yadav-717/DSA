@@ -27,14 +27,14 @@ public class subarr_count {
         {
             x[i]=sc.nextInt();
         }
-        System.out.print("\nEnter the value of k : ");
+        System.out.print("Enter the value of k : ");
         int k=sc.nextInt();
         System.out.print("Array : ");
         for(int i=0;i<n;i++)
         {
             System.out.print(x[i]+" ");
         }
-        System.out.println("Numbers of subarray with sum  "+k+" : "+count(x, k));
+        System.out.println("\nNumbers of subarray with sum  "+k+" : "+count(x, k));
         sc.close();
     }
 }
